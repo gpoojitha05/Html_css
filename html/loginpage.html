@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN FORMS</title>
+        <script>
+            function validateForm(){
+                /*DOM - document object model*/
+                //request data gathering logic 
+               var username=document.myform.user_name.value;
+               var password=document.myform.password.value;
+               // validation logic
+               if(username==""){
+                alert("boss please enter username");
+                return false;
+               }
+               if(password==""){
+                alert("boss please enter password");
+                return false;
+               }
+               return true;
+               console.log(username+" "+password);
+            }
+        </script>
+    </head>
+    <body>
+        <center><h1 style="color:blue">APPLICATION FORM</h1></center>
+        <center>
+       
+       
+            <form name="myform" action="success.html" method="post" onsubmit="return validateForm()">
+                l
+                <input type="text" name="user_name" placeholder="ENTER YOUR NAME">
+                <br>
+                <br> 
+                <input type="password" name="password" placeholder="ENTER YOUR PASSWORD">
+                <br>
+                <br>
+                <td colspan="2"><center><input type="submit" value="SUBMIT"></center></td>
+                 
+            </form>
+        </center>
+    </body>
+</html>
